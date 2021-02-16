@@ -18,7 +18,7 @@ install:
 
 build_script:
 - python secret/prepare_build.py
-- python -m PyInstaller ssrando.spec
+- python -m PyInstaller ssrando.spec --log-level=WARN
 - cp README.md dist
 
 artifacts:
